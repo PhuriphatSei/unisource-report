@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ - ระบบรายงาน บริษัท ยูนิซอร์ซ แลนด์ ฟิว จํากัด</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&family=Pridi:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo-section">
+                <img src="logo.png" alt="Company Logo" class="logo-image">
+                <h1 class="logo-title">ระบบรายงาน บริษัท ยูนิซอร์ซ แลนด์ ฟิว จํากัด</h1>
+            </div>
+
+            <form class="login-form" id="loginForm">
+                <h2 class="form-title">เข้าสู่ระบบ</h2>
+                <p class="form-subtitle">กรุณากรอกข้อมูลเพื่อเข้าใช้งาน</p>
+
+                <div class="error-message" id="errorMessage" style="display: none;">
+                    <span class="error-icon">⚠️</span>
+                    <span class="error-text">ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="username" class="form-label">
+                        <span class="label-icon">👤</span>
+                        ชื่อผู้ใช้
+                    </label>
+                    <input type="text" id="username" name="username" class="form-input" placeholder="กรอกชื่อผู้ใช้" required autocomplete="username">
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">
+                        <span class="label-icon">🔒</span>
+                        รหัสผ่าน
+                    </label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" name="password" class="form-input" placeholder="กรอกรหัสผ่าน" required autocomplete="current-password">
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            <span class="eye-icon">👁️</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="rememberMe" name="rememberMe">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">จดจำการเข้าสู่ระบบ</span>
+                    </label>
+                    <a href="#" class="forgot-password" id="forgotPassword">ลืมรหัสผ่าน?</a>
+                </div>
+
+                <button type="submit" class="login-btn" id="loginBtn">
+                    <span class="btn-text">เข้าสู่ระบบ</span>
+                    <span class="btn-icon">→</span>
+                </button>
+
+                <div class="divider"><span>หรือ</span></div>
+
+                <button type="button" class="microsoft-btn" id="microsoftBtn">
+                    <span class="microsoft-icon">🏢</span>
+                    <span>เข้าสู่ระบบด้วย Microsoft</span>
+                </button>
+            </form>
+
+            <div class="login-footer">
+                <p>© 2025 บริษัท ยูนิซอร์ซ แลนด์ ฟิว จํากัด. All rights reserved.</p>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <div class="info-content">
+                <h2 class="info-title">ยินดีต้อนรับ</h2>
+                <p class="info-description">เข้าถึงรายงานทางการเงินและข้อมูลสำคัญของคุณได้ทุกที่ทุกเวลา</p>
+                
+                <div class="features">
+                    <div class="feature-item">
+                        <span class="feature-icon">💰</span>
+                        <div class="feature-text">
+                            <h3>รายงานกระแสเงินสด</h3>
+                            <p>ติดตามการเงินแบบ Real-time</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <span class="feature-icon">📊</span>
+                        <div class="feature-text">
+                            <h3>สรุปยอดตามโครงการ</h3>
+                            <p>รายงานรายรับจ่ายโดยละเอียด</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <span class="feature-icon">🔧</span>
+                        <div class="feature-text">
+                            <h3>ซ่อมบำรุง</h3>
+                            <p>ติดตามค่าใช้จ่ายและประสิทธิภาพ</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-icon">🏗️</span>
+                        <div class="feature-text">
+                            <h3>ประมูลโครงการ</h3>
+                            <p>ติดตามสถานะและผลการประมูล</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-icon">🔒</span>
+                        <div class="feature-text">
+                            <h3>เงินค้ำประกัน</h3>
+                            <p>รายงานวงเงินและระยะเวลา</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="security-note">
+                    <span class="security-icon">🛡️</span>
+                    <p>ข้อมูลของคุณได้รับการปกป้องด้วยระบบความปลอดภัยขั้นสูง</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

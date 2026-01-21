@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบรายงาน - บริษัท ยูนิซอร์ซ แลนด์ ฟิว จํากัด</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&family=Pridi:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    
+    <div class="container">
+        <!-- User Info Bar -->
+        <div class="user-bar">
+            <div class="user-info" id="userInfo">
+                <span class="user-icon">👤</span>
+                <span class="user-name" id="userName">User</span>
+            </div>
+            <button class="logout-btn" id="logoutBtn">
+                <span class="logout-icon">🚪</span>
+                <span>ออกจากระบบ</span>
+            </button>
+        </div>
+
+        <!-- Header -->
+        <header>
+            <h1 class="main-title">ระบบรายงาน บริษัท ยูนิซอร์ซ แลนด์ ฟิว จํากัด</h1>
+            <p class="subtitle">เลือกรายงานที่ต้องการดูข้อมูล</p>
+        </header>
+
+        <div class="menu-container" id="menuContainer">
+            <div class="menu-card" data-report="cashflow">
+                <div class="menu-card-content">
+                    <div class="menu-icon">💰</div>
+                    <h2 class="menu-title">รายงานกระแสเงินสด</h2>
+                    <p class="menu-description">ติดตามการเคลื่อนไหวของเงินสดรับและจ่าย พร้อมวิเคราะห์สภาพคล่องทางการเงิน</p>
+                </div>
+                <div class="card-shine"></div>
+            </div>
+
+            <div class="menu-card" data-report="project">
+                <div class="menu-card-content">
+                    <div class="menu-icon">📊</div>
+                    <h2 class="menu-title">สรุปยอดตามโครงการ</h2>
+                    <p class="menu-description">วิเคราะห์รายรับและรายจ่ายแยกตามโครงการ เพื่อประเมินผลการดำเนินงาน</p>
+                </div>
+                <div class="card-shine"></div>
+            </div>
+
+            <div class="menu-card" data-report="maintenance">
+                <div class="menu-card-content">
+                    <div class="menu-icon">🔧</div>
+                    <h2 class="menu-title">รายงานซ่อมบำรุง</h2>
+                    <p class="menu-description">ติดตามการซ่อมบำรุงอุปกรณ์และเครื่องจักร วิเคราะห์ค่าใช้จ่ายและประสิทธิภาพ</p>
+                </div>
+                <div class="card-shine"></div>
+            </div>
+
+            <div class="menu-card" data-report="bidding">
+                <div class="menu-card-content">
+                    <div class="menu-icon">🏗️</div>
+                    <h2 class="menu-title">ประมูลโครงการ</h2>
+                    <p class="menu-description">ข้อมูลการประมูลโครงการต่างๆ ติดตามสถานะและผลการประมูล</p>
+                </div>
+                <div class="card-shine"></div>
+            </div>
+
+            <div class="menu-card" data-report="guarantee">
+                <div class="menu-card-content">
+                    <div class="menu-icon">🔒</div>
+                    <h2 class="menu-title">เงินค้ำประกัน</h2>
+                    <p class="menu-description">รายงานเงินค้ำประกันโครงการ ติดตามวงเงินและระยะเวลาค้ำประกัน</p>
+                </div>
+                <div class="card-shine"></div>
+            </div>
+        </div>
+
+        <div class="powerbi-container" id="powerbiContainer">
+            <div class="powerbi-header">
+                <h3 class="powerbi-title" id="reportTitle">รายงาน</h3>
+                <button class="close-btn" id="closeBtn">
+                    <span class="close-icon">✕</span>
+                    <span>ปิดรายงาน</span>
+                </button>
+            </div>
+            
+            <div class="powerbi-content">
+                <div class="powerbi-frame" id="powerbiFrame">
+                    <div class="placeholder">
+                        <div class="placeholder-icon">📈</div>
+                        <h3>เชื่อมต่อ Power BI</h3>
+                        <p>กรุณาใส่ Power BI Embed URL ของคุณในโค้ด JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
